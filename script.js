@@ -51,7 +51,7 @@ function downloadCatalogo(fornecedor) {
     };
     
     const nomeFornecedor = fornecedores[fornecedor];
-    const caminhoArquivo = `assets/catalogos/${fornecedor}-catalogo.pdf`;
+    const caminhoArquivo = `https://github.com/CapitalColchoes/Capital-landing/releases/download/v1.0/${fornecedor}-catalogo.pdf`;
     
     // Verificar se o arquivo existe antes de tentar fazer download
     fetch(caminhoArquivo, { method: 'HEAD' })
@@ -60,7 +60,7 @@ function downloadCatalogo(fornecedor) {
                 // Arquivo existe, fazer download
                 const link = document.createElement('a');
                 link.href = caminhoArquivo;
-                link.download = `Catalogo-${nomeFornecedor}.pdf`;
+                link.download = `${nomeFornecedor}-catalogo.pdf`;
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);
@@ -68,14 +68,12 @@ function downloadCatalogo(fornecedor) {
                 console.log(`Download do catálogo ${nomeFornecedor} iniciado!`);
             } else {
                 // Arquivo não encontrado
-                alert(`Catálogo ${nomeFornecedor} não encontrado!\n\nPor favor, adicione o arquivo "${fornecedor}-catalogo.pdf" na pasta "assets/catalogos/"`);
-                console.error(`Arquivo não encontrado: ${caminhoArquivo}`);
+                alert(`Não foi possível baixa o catálogo ${nomeFornecedor} no momento. Por favor, entre em contato por whatsapp!`);
             }
         })
         .catch(error => {
             // Erro na verificação ou arquivo não existe
-            alert(`Catálogo ${nomeFornecedor} não encontrado!\n\nPor favor, adicione o arquivo "${fornecedor}-catalogo.pdf" na pasta "assets/catalogos/"`);
-            console.error(`Erro ao verificar arquivo: ${error}`);
+            alert(`Não foi possível baixa o catálogo ${nomeFornecedor} no momento. Por favor, entre em contato por whatsapp!`);
         });
 }
 
