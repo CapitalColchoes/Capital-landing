@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capital Colchões - Noites tranquilas, dias produtivos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <img src="assets/images/logo.png" alt="Capital Colchões" class="logo-img">
+                </div>
+                <h1 class="nome-empresa">Capital Colchões</h1>
+                <h3>Noites tranquilas, dias produtivos</h3>
+            </div>
+            <nav class="main-nav">
+                <a href="#pronta-entrega" class="nav-item active" data-section="pronta-entrega">Pronta Entrega</a>
+                <a href="#complementos" class="nav-item" data-section="complementos">Complementos</a>
+                <a href="#catalogos" class="nav-item" data-section="catalogos">Encomendas</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Produtos à Pronta Entrega -->
+    <section class="produtos-pronta-entrega" id="pronta-entrega">
+        <div class="container">
+            <h2 class="section-title">Produtos à Pronta Entrega</h2>
+
+            <!-- Menu de Filtros de Colchões -->
+            <nav class="filtros-colchoes">
+                <a href="#" class="filtro-item active" data-filtro="todos">Todos</a>
+                <a href="#" class="filtro-item" data-filtro="solteiro">Solteiro</a>
+                <a href="#" class="filtro-item" data-filtro="casal">Casal</a>
+                <a href="#" class="filtro-item" data-filtro="queen">Queen</a>
+                <a href="#" class="filtro-item" data-filtro="king">King</a>
+                <a href="#" class="filtro-item" data-filtro="superKing">Super King</a>
+            </nav>
+
+
+            <div class="produtos-grid">
+
+                <!-- Produto 1 - New Freedom -->
+                <div class="produto-card" data-categoria="casal">
+                    <div class="produto-image">
+                        <img src="assets/images/pdf_pages/page_1.png" alt="Colchão New Freedom">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Colchão New Freedom</h3>
+                        <ul class="produto-detalhes">
+                            <li>Tecido em Malha 100% Poliéster com toque Super Soft;</li>
+                            <li>Pillow Top em Espuma Viscoelástica de alta tecnologia;</li>
+                            <li>Molas Superpocket Ensacadas individualmente em aço;</li>
+                            <li>Tecido Antiderrapante;</li>
+                            <li>Sistema No Turn.</li>
+                            <li>Altura: 32 cm</li>
+                        </ul>
+                        <button class="whatsapp-btn" onclick="abrirWhatsApp('Colchão New Freedom')">
+                            <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.787" />
+                            </svg>
+                            Fale no WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 1.2 - Exclusive Gel -->
+                <div class="produto-card" data-categoria="casal">
+                    <div class="produto-image">
+                        <img src="assets/images/pdf_pages/page_2.png" alt="Colchão Exclusive Gel">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Colchão Exclusive Gel</h3>
+                        <ul class="produto-detalhes">
+                            <li>Espuma Certificada Firme 100% Poliuretano;</li>
+                            <li>Molas Superpocket Ensacadas Individualmente;</li>
+                            <li> Malha em alta gramatura com toque suave e maior número de fios;</li>
+                            <li> Orto Pillow em Espuma Viscoelástica com pigmentos de Gel;</li>
+                            <li> Espuma Extra Firme Certificada 100% Poliuretano D33;</li>
+                            <li>Dupla camada de Espuma Firme Certificada 100% Poliuretano;</li>
+                            <li>Reforço Lateral em PU;</li>
+                            <li>Tecido Antiderrapante.</li>
+                            <li>Altura: 34 cm</li>
+                        </ul>
+                        <button class="whatsapp-btn" onclick="abrirWhatsApp('Colchão Exclusive Gel')">
+                            <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.787" />
+                            </svg>
+                            Fale no WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 1.3 - Exclusive Spring FC -->
+                <div class="produto-card" data-categoria="solteiro" data-categoria="casal">
+                    <div class="produto-image">
+                        <img src="assets/images/pdf_pages/page_3.png" alt="Colchão Exclusive Spring FC">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Colchão Exclusive Spring FC</h3>
+                        <ul class="produto-detalhes">
+                            <li>Tecido em Malha com toque Super Soft</li>
+                            <li>Estrutura de Molas de Fio Contínuo Superlastic</li>
+                            <li> Espuma Extra Firme Certificada 100% Poliuretano</li>
+                            <li>Tecido Antiderrapante</li>
+                            <li>Sistema No Turn</li>
+                            <li>Altura: 30 cm</li>
+                        </ul>
+                        <button class="whatsapp-btn" onclick="abrirWhatsApp('Colchão Exclusive Spring FC')">
+                            <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.787" />
+                            </svg>
+                            Fale no WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                                <!-- Produto 1.4 - Exclusive Sleep -->
+                <div class="produto-card" data-categoria="casal">
+                    <div class="produto-image">
+                        <img src="assets/images/pdf_pages/page_4.png" alt="Colchão Exclusive Sleep">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Colchão Exclusive Sleep</h3>
+                        <ul class="produto-detalhes">
+                            <li>Reforço Lateral em Poliuretano;</li>
+                            <li>Bordado em Matelassê em Manta Acrílica;</li>
+                            <li>Espuma Firme Selada 100% Poliuretano;</li>
+                            <li>Estrutura de molas Superpocket ensacadas individualmente;</li>
+                            <li>Camada de conforto em Espuma High Resilience;</li>
+                            <li>Tecido Antiderrapante;</li>
+                            <li>Sistema No Turn;</li>
+                            <li>Altura: 32 cm</li>
+                        </ul>
+                        <button class="whatsapp-btn" onclick="abrirWhatsApp('Colchão Exclusive Sleep')">
+                            <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967..."/>
+                            </svg>
+                            Fale no WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 1.5 - Exclusive Visco -->
+                <div class="produto-card" data-categoria="casal">
+                    <div class="produto-image">
+                        <img src="assets/images/pdf_pages/page_5.png" alt="Colchão Exclusive Visco">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Colchão Exclusive Visco</h3>
+                        <ul class="produto-detalhes">
+                            <li>Pigmentos em gel;</li>
+                            <li>Design moderno;</li>
+                            <li>Espuma extra firme certificada 100% Poliuretano;</li>
+                            <li>Camada de conforto em espuma viscoelástica;</li>
+                            <li>Malha 100% Poliéster de alto nível de maciez;</li>
+                            <li>Sistema No Turn;</li>
+                            <li>Altura: 30 cm</li>
+                        </ul>
+                        <button class="whatsapp-btn" onclick="abrirWhatsApp('Colchão Exclusive Visco')">
+                            <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967..."/>
+                            </svg>
+                            Fale no WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 1.6 - Exclusive LFK -->
+                <div class="produto-card" data-categoria="casal">
+                    <div class="produto-image">
+                        <img src="assets/images/pdf_pages/page_6.png" alt="Colchão Exclusive LFK">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Colchão Exclusive LFK</h3>
+                        <ul class="produto-detalhes">
+                            <li>Tecido em Malha de Poliéster e Linho;</li>
+                            <li>Bordado em Matelassê em Manta Acrílica e Espuma Firme convencional;</li>
+                            <li>Reforço Lateral em Poliuretano;</li>
+                            <li>Estrutura de Molas LFK com resistência progressiva;</li>
+                            <li>Espuma Extra Firme Certificada 100% Poliuretano;</li>
+                            <li>Tecido Antiderrapante;</li>
+                            <li>Sistema No Turn;</li>
+                            <li>Altura: 30 cm</li>
+                        </ul>
+                        <button class="whatsapp-btn" onclick="abrirWhatsApp('Colchão Exclusive LFK')">
+                            <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967..."/>
+                            </svg>
+                            Fale no WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 1.7 - Exclusive Foam -->
+                <div class="produto-card" data-categoria="casal">
+                    <div class="produto-image">
+                        <img src="assets/images/pdf_pages/page_7.png" alt="Colchão Exclusive Foam">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Colchão Exclusive Foam</h3>
+                        <ul class="produto-detalhes">
+                            <li>Conforto resistente em Espuma High Resilience;</li>
+                            <li>Espuma Sustentável Ecologicamente Correta;</li>
+                            <li>Espuma Firme Certificada 100% Poliuretano;</li>
+                            <li>Toque suave e bordado em manta acrílica;</li>
+                            <li>Tecido em malha 100% Poliéster;</li>
+                            <li>Tecido Antiderrapante;</li>
+                            <li>Altura: 30 cm</li>
+                        </ul>
+                        <button class="whatsapp-btn" onclick="abrirWhatsApp('Colchão Exclusive Foam')">
+                            <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967..."/>
+                            </svg>
+                            Fale no WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 1.8 - Exclusive Orthopedic -->
+                <div class="produto-card" data-categoria="solteiro casal">
+                    <div class="produto-image">
+                        <img src="assets/images/pdf_pages/page_8.png" alt="Colchão Exclusive Orthopedic">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Colchão Exclusive Orthopedic</h3>
+                        <ul class="produto-detalhes">
+                            <li>Tecido de Malha 100% Poliéster;</li>
+                            <li>Bordado em Matelassê em Manta Acrílica e Espuma Convencional;</li>
+                            <li>Espuma Firme Certificada 100% Poliuretano;</li>
+                            <li>Estrutura de Madeira Tratada de Reflorestamento;</li>
+                            <li>Tecido Antiderrapante;</li>
+                            <li>Sistema No Turn;</li>
+                            <li>Altura: 27 cm</li>
+                        </ul>
+                        <button class="whatsapp-btn" onclick="abrirWhatsApp('Colchão Exclusive Orthopedic')">
+                            <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967..."/>
+                            </svg>
+                            Fale no WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 1.9 - Fit D23 -->
+                <div class="produto-card" data-categoria="solteiro">
+                    <div class="produto-image">
+                        <img src="assets/images/pdf_pages/page_9.png" alt="Colchão Fit D23">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Colchão Fit D23</h3>
+                        <ul class="produto-detalhes">
+                            <li>Tecido em malha toque suave;</li>
+                            <li>Bordado em Matelassê em espuma 100% Convencional;</li>
+                            <li>Espuma Certificada 100% Poliuretano D23;</li>
+                            <li>Alturas disponíveis: 12 cm / 17 cm / 20 cm</li>
+                        </ul>
+                        <button class="whatsapp-btn" onclick="abrirWhatsApp('Colchão Fit D23')">
+                            <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967..."/>
+                            </svg>
+                            Fale no WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 1.10 - Fit D28 -->
+                <div class="produto-card" data-categoria="solteiro casal">
+                    <div class="produto-image">
+                        <img src="assets/images/pdf_pages/page_10.png" alt="Colchão Fit D28">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Colchão Fit D28</h3>
+                        <ul class="produto-detalhes">
+                            <li>Tecido em malha toque suave;</li>
+                            <li>Bordado em Matelassê em espuma 100% Convencional;</li>
+                            <li>Espuma Certificada 100% Poliuretano D28;</li>
+                            <li>Alturas disponíveis: 13 cm / 17 cm / 20 cm</li>
+                        </ul>
+                        <button class="whatsapp-btn" onclick="abrirWhatsApp('Colchão Fit D28')">
+                            <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967..."/>
+                            </svg>
+                            Fale no WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 1.11 - Fit D33 -->
+                <div class="produto-card" data-categoria="solteiro casal">
+                    <div class="produto-image">
+                        <img src="assets/images/pdf_pages/page_11.png" alt="Colchão Fit D33">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Colchão Fit D33</h3>
+                        <ul class="produto-detalhes">
+                            <li>Tecido em malha toque suave;</li>
+                            <li>Bordado em Matelassê em espuma 100% Convencional;</li>
+                            <li>Espuma Certificada 100% Poliuretano D33;</li>
+                            <li>Alturas disponíveis: 13 cm / 17 cm / 20 cm / 25 cm / 30 cm</li>
+                        </ul>
+                        <button class="whatsapp-btn" onclick="abrirWhatsApp('Colchão Fit D33')">
+                            <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967..."/>
+                            </svg>
+                            Fale no WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 1.12 - Fit D45 -->
+                <div class="produto-card" data-categoria="casal queen king superKing">
+                    <div class="produto-image">
+                        <img src="assets/images/pdf_pages/page_12.png" alt="Colchão Fit D45">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Colchão Fit D45</h3>
+                        <ul class="produto-detalhes">
+                            <li>Tecido em malha toque suave;</li>
+                            <li>Bordado em Matelassê em espuma 100% Convencional;</li>
+                            <li>Espuma Certificada 100% Poliuretano D45;</li>
+                            <li>Alturas disponíveis: 13 cm / 17 cm / 20 cm / 25 cm / 30 cm</li>
+                        </ul>
+                        <button class="whatsapp-btn" onclick="abrirWhatsApp('Colchão Fit D45')">
+                            <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967..."/>
+                            </svg>
+                            Fale no WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 1.13 - Fit Spring -->
+                <div class="produto-card" data-categoria="casal queen king">
+                    <div class="produto-image">
+                        <img src="assets/images/pdf_pages/page_13.png" alt="Colchão Fit Spring">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Colchão Fit Spring</h3>
+                        <ul class="produto-detalhes">
+                            <li>Bordado em Matelassê confeccionado em espuma certificada;</li>
+                            <li>Espuma Firme 100% Poliuretano;</li>
+                            <li>Estrutura de Molas de Fio Contínuo Superlastic;</li>
+                            <li>Tecido Antiderrapante;</li>
+                            <li>Sistema No Turn;</li>
+                            <li>Altura: 26 cm</li>
+                        </ul>
+                        <button class="whatsapp-btn" onclick="abrirWhatsApp('Colchão Fit Spring')">
+                            <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967..."/>
+                            </svg>
+                            Fale no WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 1.14 - Fit Spring Pocket -->
+                <div class="produto-card" data-categoria="casal queen king">
+                    <div class="produto-image">
+                        <img src="assets/images/pdf_pages/page_14.png" alt="Colchão Fit Spring Pocket">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Colchão Fit Spring Pocket</h3>
+                        <ul class="produto-detalhes">
+                            <li>Tecido em Malha toque suave;</li>
+                            <li>Bordado em Matelassê em Manta Acrílica e Espuma certificada;</li>
+                            <li>Espuma Firme certificada 100% Poliuretano;</li>
+                            <li>Estrutura de molas Superpocket ensacadas individualmente;</li>
+                            <li>Reforço Lateral em Poliuretano;</li>
+                            <li>Sistema No Turn;</li>
+                            <li>Altura: 30 cm</li>
+                        </ul>
+                        <button class="whatsapp-btn" onclick="abrirWhatsApp('Colchão Fit Spring Pocket')">
+                            <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967..."/>
+                            </svg>
+                            Fale no WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 1.15 - Fit Spring Progressive -->
+                <div class="produto-card" data-categoria="casal queen king">
+                    <div class="produto-image">
+                        <img src="assets/images/pdf_pages/page_15.png" alt="Colchão Fit Spring Progressive">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Colchão Fit Spring Progressive</h3>
+                        <ul class="produto-detalhes">
+                            <li>Tecido em Malha com toque suave;</li>
+                            <li>Bordado em Matelassê em Manta Acrílica e Espuma Convencional;</li>
+                            <li>Espuma Firme Selada 100% Poliuretano;</li>
+                            <li>Estrutura de Molas Nanolastic Bicônicas;</li>
+                            <li>Sistema No Turn;</li>
+                            <li>Altura: 28 cm</li>
+                        </ul>
+                        <button class="whatsapp-btn" onclick="abrirWhatsApp('Colchão Fit Spring Progressive')">
+                            <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967..."/>
+                            </svg>
+                            Fale no WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 1.16 - Fit Ortopédico -->
+                <div class="produto-card" data-categoria="solteiro casal">
+                    <div class="produto-image">
+                        <img src="assets/images/pdf_pages/page_16.png" alt="Colchão Fit Ortopédico">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Colchão Fit Ortopédico</h3>
+                        <ul class="produto-detalhes">
+                            <li>Tecido em 53% Poliéster e 47% Viscose;</li>
+                            <li>Bordado em Matelassê em espuma 100% Poliuretano;</li>
+                            <li>Camada de conforto Espuma Firme Certificada 100% Poliuretano;</li>
+                            <li>Estrutura de Madeira Tratada de área de Reflorestamento;</li>
+                            <li>Sistema No Turn;</li>
+                            <li>Altura: 24 cm</li>
+                        </ul>
+                        <button class="whatsapp-btn" onclick="abrirWhatsApp('Colchão Fit Ortopédico')">
+                            <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967..."/>
+                            </svg>
+                            Fale no WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Complementos -->
+    <section class="complementos" id="complementos">
+        <div class="container">
+            <h2 class="section-title">Complementos</h2>
+            <div class="produtos-grid">
+                <!-- Complemento 1 -->
+                <div class="produto-card">
+                    <div class="produto-image">
+                        <img src="assets/images/travesseiro-1.jpg" alt="Travesseiro Hug Ortobom">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Travesseiro Hug Ortobom</h3>
+                        <p class="produto-detalhes">Espuma Viscoelástica • 50x70cm</p>
+                        <button class="whatsapp-btn" onclick="abrirWhatsApp('Travesseiro Hug Ortobom')">
+                            <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.787" />
+                            </svg>
+                            Fale no WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Complemento 2 -->
+                <div class="produto-card">
+                    <div class="produto-image">
+                        <img src="assets/images/protetor-colchao-1.jpg" alt="Protetor de Colchão Impermeável">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Protetor de Colchão Impermeável</h3>
+                        <p class="produto-detalhes">Queen • Felpudo Atoalhado</p>
+                        <button class="whatsapp-btn" onclick="abrirWhatsApp('Protetor de Colchão Impermeável Queen')">
+                            <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.787" />
+                            </svg>
+                            Fale no WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Complemento 3 -->
+                <div class="produto-card">
+                    <div class="produto-image">
+                        <img src="assets/images/saia-box-1.jpg" alt="Saia Box de Malha">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Saia Box de Malha</h3>
+                        <p class="produto-detalhes">Queen • 1,60m x 2,00m x 38cm</p>
+                        <button class="whatsapp-btn" onclick="abrirWhatsApp('Saia Box de Malha Queen')">
+                            <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.787" />
+                            </svg>
+                            Fale no WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos por Encomenda -->
+    <section class="catalogos" id="catalogos">
+        <div class="container">
+            <h2 class="section-title">Catálogos para Encomenda</h2>
+            <p class="section-subtitle">Baixe os catálogos completos de nossos fornecedores parceiros</p>
+
+            <div class="catalogos-grid">
+                <div class="catalogo-card">
+                    <div class="catalogo-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                        </svg>
+                    </div>
+                    <h3 class="catalogo-nome">FA</h3>
+                    <p class="catalogo-descricao">Catálogo completo de produtos FA</p>
+                    <button class="download-btn" onclick="downloadCatalogo('fa')">
+                        <svg class="download-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M5,20H19V18H5M19,9H15V3H9V9H5L12,16L19,9Z" />
+                        </svg>
+                        Download PDF
+                    </button>
+                </div>
+
+                <div class="catalogo-card">
+                    <div class="catalogo-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                        </svg>
+                    </div>
+                    <h3 class="catalogo-nome">Luckspuma</h3>
+                    <p class="catalogo-descricao">Catálogo completo de produtos Luckspuma</p>
+                    <button class="download-btn" onclick="downloadCatalogo('luckspuma')">
+                        <svg class="download-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M5,20H19V18H5M19,9H15V3H9V9H5L12,16L19,9Z" />
+                        </svg>
+                        Download PDF
+                    </button>
+                </div>
+
+                <div class="catalogo-card">
+                    <div class="catalogo-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                        </svg>
+                    </div>
+                    <h3 class="catalogo-nome">Ortobom</h3>
+                    <p class="catalogo-descricao">Catálogo completo de produtos Ortobom</p>
+                    <button class="download-btn" onclick="downloadCatalogo('ortobom')">
+                        <svg class="download-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M5,20H19V18H5M19,9H15V3H9V9H5L12,16L19,9Z" />
+                        </svg>
+                        Download PDF
+                    </button>
+                </div>
+
+                <div class="catalogo-card">
+                    <div class="catalogo-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                        </svg>
+                    </div>
+                    <h3 class="catalogo-nome">Castor</h3>
+                    <p class="catalogo-descricao">Catálogo completo de produtos Castor</p>
+                    <button class="download-btn" onclick="downloadCatalogo('castor')">
+                        <svg class="download-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M5,20H19V18H5M19,9H15V3H9V9H5L12,16L19,9Z" />
+                        </svg>
+                        Download PDF
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="footer-title">Capital Colchões</h3>
+                    <p class="footer-slogan">Noites tranquilas, dias produtivos</p>
+                </div>
+
+                <div class="footer-links">
+                    <a href="#pronta-entrega" onclick="scrollToSection('pronta-entrega')">Pronta Entrega</a>
+                    <a href="#complementos" onclick="scrollToSection('complementos')">Complementos</a>
+                    <a href="#catalogos" onclick="scrollToSection('catalogos')">Catálogos</a>
+                </div>
+
+                <div class="footer-contact">
+                    <button class="footer-whatsapp" onclick="abrirWhatsAppSemProduto()">
+                        <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.787" />
+                        </svg>
+                        Fale Conosco
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão WhatsApp Fixo -->
+    <div class="whatsapp-float">
+        <button class="whatsapp-float-btn" onclick="abrirWhatsAppSemProduto()">
+            <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.787" />
+            </svg>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
