@@ -52,23 +52,13 @@ function downloadCatalogo(fornecedor) {
     
     const nomeFornecedor = fornecedores[fornecedor];
     const caminhoArquivo = `https://github.com/CapitalColchoes/Capital-landing/releases/download/v1.0/${fornecedor}-catalogo.pdf`;
-    
-    // Verificar se o arquivo existe antes de abrir
-    fetch(caminhoArquivo, { method: 'HEAD' })
-        .then(response => {
-            if (response.ok) {
-                // Arquivo existe → abrir em nova aba
-                window.open(caminhoArquivo, '_blank');
-                console.log(`Catálogo ${nomeFornecedor} aberto em nova aba.`);
-            } else {
-                // Arquivo não encontrado
-                alert(`Não foi possível abrir o catálogo ${nomeFornecedor} no momento. Por favor, entre em contato por WhatsApp!`);
-            }
-        })
-        .catch(error => {
-            // Erro na verificação
-            alert(`Não foi possível abrir o catálogo ${nomeFornecedor} no momento. Por favor, entre em contato por WhatsApp!`);
-        });
+
+    try {
+        window.open(caminhoArquivo, '_blank');
+        console.log(`Catálogo ${nomeFornecedor} aberto em nova aba.`);
+    } catch (error) {
+        alert(`Não foi possível abrir o catálogo ${nomeFornecedor}. Por favor, entre em contato  WhatsApp!`);
+    }
 }
 
 // Função para detectar seção visível e atualizar navegação
