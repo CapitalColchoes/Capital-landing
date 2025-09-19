@@ -439,9 +439,9 @@ function filtrarProdutos(categoria) {
     const produtos = document.querySelectorAll(".produto-card");
     
     produtos.forEach(produto => {
-        const categoriaProduto = produto.getAttribute("data-categoria");
+        const categorias = produto.getAttribute("data-categoria").split(" ");
         
-        if (categoria === "todos" || categoriaProduto === categoria) {
+        if (categoria === "todos" || categorias.includes(categoria)) {
             produto.style.display = "block";
         } else {
             produto.style.display = "none";
