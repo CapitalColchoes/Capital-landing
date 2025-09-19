@@ -53,27 +53,21 @@ function downloadCatalogo(fornecedor) {
     const nomeFornecedor = fornecedores[fornecedor];
     const caminhoArquivo = `https://github.com/CapitalColchoes/Capital-landing/releases/download/v1.0/${fornecedor}-catalogo.pdf`;
     
-    // Verificar se o arquivo existe antes de tentar fazer download
+    // Verificar se o arquivo existe antes de abrir
     fetch(caminhoArquivo, { method: 'HEAD' })
         .then(response => {
             if (response.ok) {
-                // Arquivo existe, fazer download
-                const link = document.createElement('a');
-                link.href = caminhoArquivo;
-                link.download = `${nomeFornecedor}-catalogo.pdf`;
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-                
-                console.log(`Download do catálogo ${nomeFornecedor} iniciado!`);
+                // Arquivo existe → abrir em nova aba
+                window.open(caminhoArquivo, '_blank');
+                console.log(`Catálogo ${nomeFornecedor} aberto em nova aba.`);
             } else {
                 // Arquivo não encontrado
-                alert(`Não foi possível baixa o catálogo ${nomeFornecedor} no momento. Por favor, entre em contato por whatsapp!`);
+                alert(`Não foi possível abrir o catálogo ${nomeFornecedor} no momento. Por favor, entre em contato por WhatsApp!`);
             }
         })
         .catch(error => {
-            // Erro na verificação ou arquivo não existe
-            alert(`Não foi possível baixa o catálogo ${nomeFornecedor} no momento. Por favor, entre em contato por whatsapp!`);
+            // Erro na verificação
+            alert(`Não foi possível abrir o catálogo ${nomeFornecedor} no momento. Por favor, entre em contato por WhatsApp!`);
         });
 }
 
